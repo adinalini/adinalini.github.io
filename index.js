@@ -11,4 +11,9 @@ app.get('/user/:username', function(req, res) {
 
 
 
+
+app.get('*', function(req, res) {
+    res.send('Sorry, this is an invalid URL.');
+});
+
 app.listen(3000);
